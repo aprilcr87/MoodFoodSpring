@@ -25,7 +25,7 @@ public class YelpService implements YelpServiceInterface {
         RestTemplate restTemplate = new RestTemplate();
 
         HttpHeaders httpHeaders = new HttpHeaders();
-        httpHeaders.add("Authorization", "Bearer " + "BEfhZtkrid-6PpLkPAsySs3lDnswwfql6JUoRQ9coBFfGmmRXCRGSvV54ISBHoKS8Y-5xDfy4QCY9pd9yHuTCEN0cSScscPhoSwYzhusaltZHhm2J1Jl_w8ei1zFWnYx");
+        httpHeaders.add("Authorization", "Bearer " + "");
 
         String endpoint = "https://api.yelp.com/v3/businesses/search?sort_by=distance&limit=5";
         endpoint = endpoint + "&term=" + request.getTerm() + "&location=" + request.getLocation();
