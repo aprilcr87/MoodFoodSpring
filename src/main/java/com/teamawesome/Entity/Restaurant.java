@@ -1,6 +1,7 @@
 package com.teamawesome.Entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
@@ -14,15 +15,27 @@ public class Restaurant {
 
     @Id
     private String id;
+
+    @JsonProperty("name")
     private String name;
+
+    @JsonProperty("image_url")
     private String image_url;
+
+    @JsonProperty("is_closed")
     private boolean is_closed;
+
+    @JsonProperty("url")
     private String url;
 
     @Embedded
+    @JsonProperty("categories")
     private String categories;
 
+    @JsonProperty("location")
     private String location;
+
+    @JsonProperty("display_phone")
     private String display_phone;
 
     public Restaurant() {}

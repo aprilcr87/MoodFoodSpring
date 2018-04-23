@@ -1,14 +1,14 @@
 package com.teamawesome.Dao;
 
-import com.teamawesome.Entity.GetRestaurantsResponse;
 import com.teamawesome.Entity.GetRestaurantsRequest;
+import org.springframework.http.ResponseEntity;
 
 import java.io.IOException;
 
 public interface YelpServiceInterface {
 
 
-    public GetRestaurantsResponse getRestaurants(GetRestaurantsRequest getRestaurantsRequest) throws IOException;
+    public ResponseEntity<?> getRestaurants(GetRestaurantsRequest getRestaurantsRequest) throws IOException;
 
 
 }

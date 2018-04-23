@@ -1,10 +1,10 @@
 package com.teamawesome.Entity;
 
+
 public class GetRestaurantsRequest {
 
     private String term;
     private String location;
-
 
     public GetRestaurantsRequest(String term, String location) {
         this.term = term;
